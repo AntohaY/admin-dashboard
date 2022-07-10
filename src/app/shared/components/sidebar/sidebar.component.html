@@ -1,10 +1,27 @@
-<div>
-  profile
-</div>
-<mat-divider></mat-divider>
+<mat-nav-list>
+  <div class="profile-card">
+    <div class="header">
+      <h2>Anton Yakovenko</h2>
+      <h4>Email@email.com</h4>
+    </div>
+    <img src="https://i.pinimg.com/736x/dc/1c/32/dc1c3217fdf99640686135d7b2329bc0.jpg" alt="">
+  </div>
 
-menu
+  <mat-divider></mat-divider>
 
-<mat-divider></mat-divider>
+  <h2 matSubheader>Pages</h2>
 
-another menu
+  <a mat-list-item routerLinkActive="list-item-active" routerLink="/">Dashboard</a>
+  <a mat-list-item routerLinkActive="list-item-active" routerLink="/posts">Posts</a>
+  <a mat-list-item routerLinkActive="list-item-active" routerLink="/articles">Articles</a>
+
+  <mat-divider></mat-divider>
+
+  <h2 matSubheader>Tools</h2>
+
+  <a mat-list-item routerLinkActive="list-item-active" routerLink="/contacts">
+    <mat-icon>import_contacts</mat-icon>
+  </a>
+
+
+</mat-nav-list>
